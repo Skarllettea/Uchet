@@ -1,0 +1,34 @@
+﻿<Window x:Class="Simplay.SaleOk"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simplay"
+        mc:Ignorable="d"
+        Title="SaleOk" Background="#595959" 
+        Height="500" Width="400">
+    <Grid>
+        <Label Content="Покупка совершена!" 
+               Foreground="White"
+               FontSize="25" Margin="0,20,0,0"
+               HorizontalAlignment="Center"/>
+        <Label 
+               Foreground="White"
+               FontSize="18" Margin="0,70,0,0"
+               HorizontalAlignment="Center">
+            <Image Height="200" 
+                   Source="N6UjNrWtQuW9sI0ML2FSxyK18hsrcueW2Zfe0hQAWp3qGK5bGNscNBpKX8D2hOfdvm3Z3xyfo51bUDBq2wGHKhB9.jpg" 
+                   Stretch="Fill" Width="220"/>
+        </Label>
+        <Label Content="Ключ игры для активации:" 
+               Foreground="White"
+               FontSize="18" Margin="0,290,0,0"
+               HorizontalAlignment="Center"/>
+        <TextBox x:Name="Key" Width="200" Height="30"
+                 Margin="0,240,0,0"/>
+        <Button x:Name="btnCancel" Click="btnBack"
+                Content="Вернуться" Background="#C382E1"
+                Width="150" Height="30" Foreground="White"
+                Margin="0,370,0,0"/>
+    </Grid>
+</Window>

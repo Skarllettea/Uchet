@@ -1,0 +1,72 @@
+﻿<Window x:Class="Simplay.SaleGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simplay"
+        mc:Ignorable="d"
+        Title="SaleGame" Background="#595959" 
+        Height="450" Width="500">
+    <Grid>
+        <StackPanel>
+
+            <Label Content="Покупка" FontSize="25"
+                       Foreground="White" 
+                       HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal"
+                        Margin="50,55,50,25">
+                <StackPanel>
+                    <TextBlock Text="Банк" FontSize="20"
+                               Foreground="White"
+                               Margin="0,0,0,20"/>
+                    <TextBlock Text="Номер карты" FontSize="20"
+                               Foreground="White"
+                               Margin="0,0,0,20"/>
+                    <TextBlock Text="CVV" 
+                               FontSize="20"
+                               Foreground="White"
+                               Margin="0,0,0,20"/>
+                    <TextBlock Text="ФИ владельца" FontSize="20"
+                               Foreground="White"
+                               Margin="0,0,0,20"/>
+                    <TextBlock Text="Дата окончания карты" 
+                               FontSize="20"
+                               Foreground="White" 
+                               Margin="0,0,0,20"/>
+                </StackPanel>
+                <StackPanel>
+                    <TextBox x:Name="Bank" 
+                             FontSize="20" Width="275" 
+                             Margin="10,0,0,20"/>
+                    <TextBox x:Name="CardNumber" 
+                             FontSize="20" Width="275" 
+                             Margin="10,0,0,17"/>
+                    <TextBox x:Name="Cvv" 
+                             FontSize="20" Width="275" 
+                             Margin="10,0,0,17"/>
+                    <TextBox x:Name="Owner" 
+                             FontSize="20" Width="275" 
+                             Margin="10,0,0,17"/>
+                    <TextBox x:Name="Term" 
+                             FontSize="20" Width="275" 
+                             Margin="10,0,0,17"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,5,0,0"
+                        HorizontalAlignment="Center">
+                <Button x:Name="OkButton" Content="Войти"
+                        FontSize="20" Width="125" Foreground="White"
+                        Margin="0,0,60,0" Click="OkButton_Click" Background="#C382E1" 
+                        />
+                <Border CornerRadius="10">
+                    <Button x:Name="CancelButton"
+                        Margin="0" Foreground="White"
+                        Content="Выйти"
+                        FontSize="20" Width="125" Click="CancelButton_Click" Background="#C382E1"/>
+
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
